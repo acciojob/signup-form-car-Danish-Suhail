@@ -10,7 +10,57 @@
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
+	<form method="post">
+		
+		<!-- Name Field -->
+		<label for="name">Name</label>
+		<input type="text" id="name" placeholder="Name" required>
+
+		<!-- Email Field -->
+		<label for="email">Email</label>
+		<input type="email" id="email" placeholder="Email" required>
+
+		<!-- Gender Field (Radio Buttons) -->
+		<label>Gender</label>
+		<input type="radio" id="gender_m" name="gender" required>
+		<label for="gender_m">Male</label>
+		
+		<input type="radio" id="gender_f" name="gender" required>
+		<label for="gender_f">Female</label>
+		
+		<!-- Car Brands Field (Dropdown Select) -->
+		<label for="cars">Car Brands</label>
+		<select id="cars" required>
+			<option value="">--Please choose an option--</option>
+			<option value="tesla">Tesla</option>
+			<option value="bmw">BMW</option>
+			<option value="ford">Ford</option>
+		</select>
+		
+		<!-- Age Field -->
+		<label for="age">Age</label>
+		<input type="number" id="age" placeholder="Age" required>
+
+		<!-- Date of Birth Field -->
+		<label for="dob">DOB</label>
+		<input type="date" id="dob" required>
+
+		<!-- Phone Number Field (Optional) -->
+		<label for="tel">Phone Number</label>
+		<input type="tel" id="tel" placeholder="xxx-xxx-xxxx">
+
+		<!-- Password Field -->
+		<label for="password">Password</label>
+		<input type="password" id="password" placeholder="Password" required>
+
+		<!-- Terms of Service Checkbox -->
+		<input type="checkbox" id="tos" required>
+		<label for="tos">I agree to the TOS</label>
+		
+		<!-- Submit Button -->
+		<button type="submit">Sign Up</button>
+		
+	</form>
 
 </body>
-
 </html>
